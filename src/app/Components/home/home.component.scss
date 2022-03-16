@@ -1,0 +1,665 @@
+@font-face {
+  font-family: "Geomanist";
+  src: url(./../../../assets/fonts/Geomanist-Regular/geomanist-regular-webfont.ttf)
+    format("truetype");
+}
+
+/*================== Variable Colors ==================*/
+
+$primaryColor: #a82c48;
+$secondColor: #43121d;
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$textColor: #555555;
+$barColor: rgb(160, 160, 160);
+$bodyColor: rgb(250, 250, 250);
+
+$colorBtnCV: #708296;
+
+/*================== Nav Styles ==================*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  font-family: "Geomanist", sans-serif;
+  text-decoration: none;
+}
+
+.imgLogo {
+  max-width: 14rem;
+}
+
+/*================== Custom CSS Design ==================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Geomanist", sans-serif;
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  line-height: 4.6875rem;
+  color: $secondColor;
+}
+
+h2 {
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: $secondColor;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: $secondColor;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: $secondColor;
+}
+
+p {
+  font-size: 1rem;
+  color: $secondColor;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  font-family: "Geomanist", sans-serif;
+}
+
+/*======================= Sections =======================*/
+
+#sectionHome,
+#sectionAboutMe,
+#sectionCertificates,
+#sectionSkills,
+#sectionProjects,
+#sectionContactMe {
+  padding: 0 40px;
+}
+
+/*======================= Home =======================*/
+
+.container-home {
+  width: 100%;
+  margin: 0;
+  padding: 3.875rem 0 0;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.content-home {
+  grid-template-columns: 0.5fr 3fr;
+  align-items: center;
+}
+
+.imgMe {
+  width: 80vw;
+  opacity: 1;
+}
+
+.data-home {
+  grid-column: 1/3;
+  margin-top: -300px;
+}
+
+.description-home {
+  line-height: 1.5;
+}
+
+.name-home {
+  letter-spacing: 0.5em;
+  color: $textColor;
+}
+
+.title-home {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: $secondColor;
+}
+
+.rol-home {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: $textColor;
+  letter-spacing: 0.2em;
+}
+
+.description-home {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-home {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: $textColor;
+  transition: 0.6s all ease;
+}
+
+.btn-home:hover {
+  color: $blackColor;
+  border-bottom: 1px solid $blackColor;
+}
+
+/*======================= AboutMe =======================*/
+
+.img-aboutMe {
+  width: 300px;
+  justify-self: center;
+  align-self: center;
+}
+
+.description-aboutMe {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.info-about {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about__buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.data-aboutMe {
+  margin-top: 0%;
+}
+
+.btn-CV {
+  margin-top: 2rem;
+}
+
+.btn-CV-Download {
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin: 1em 0.8em;
+  color: $textColor;
+}
+
+.btn-CV-Download::after,
+.btn-CV-Download::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+
+.btn-CV-Download::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: $colorBtnCV;
+  border-right-color: $colorBtnCV;
+}
+
+.btn-CV-Download::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: $colorBtnCV;
+  border-left-color: $colorBtnCV;
+}
+
+.btn-CV-Download:hover:after,
+.btn-CV-Download:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-CV-Download:hover {
+  color: $colorBtnCV;
+}
+
+/*======================= Certificates =======================*/
+
+#sectionCertificates {
+  margin-top: 30px;
+}
+
+.imgCertificates {
+  width: 80px !important;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/*======================= Skills =======================*/
+
+.skillTitle {
+  font-weight: bold;
+}
+
+.containerListSkill {
+  margin-left: 2rem;
+  width: 100%;
+
+  .bar {
+    margin-top: 10px;
+    position: relative;
+    border: 1px solid $barColor;
+    border-radius: 20px;
+  }
+
+  .bar div {
+    position: relative;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: $barColor;
+  }
+}
+
+.imgTitleSkills {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.skillText {
+  font-weight: bold;
+}
+
+.iconDown {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.6s all ease;
+
+  i {
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 4px;
+  }
+}
+
+.iconDown:hover {
+  background: rgb(230, 230, 230);
+}
+
+//================ Animations ================//
+
+.bar-95 {
+  animation: bar-95 3s forwards;
+}
+@keyframes bar-95 {
+  100% {
+    width: 95%;
+  }
+}
+
+.bar-90 {
+  animation: bar-90 3s forwards;
+}
+@keyframes bar-90 {
+  100% {
+    width: 90%;
+  }
+}
+
+.bar-85 {
+  animation: bar-85 3s forwards;
+}
+@keyframes bar-85 {
+  100% {
+    width: 85%;
+  }
+}
+
+.bar-80 {
+  animation: bar-80 3s forwards;
+}
+@keyframes bar-80 {
+  100% {
+    width: 80%;
+  }
+}
+
+.bar-70 {
+  animation: bar-70 3s forwards;
+}
+@keyframes bar-70 {
+  100% {
+    width: 70%;
+  }
+}
+
+.bar-60 {
+  animation: bar-60 3s forwards;
+}
+@keyframes bar-60 {
+  100% {
+    width: 60%;
+  }
+}
+
+.bar-50 {
+  animation: bar-50 3s forwards;
+}
+@keyframes bar-50 {
+  100% {
+    width: 50%;
+  }
+}
+
+//================ Footer ================//
+
+.ftco-footer-social li {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block;
+
+  a {
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    position: relative;
+
+    span {
+      position: absolute;
+      font-size: 20px;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.ftco-footer-social li a:hover {
+  color: #fff;
+}
+
+footer {
+  padding: 3em 0;
+  padding-bottom: 1rem;
+}
+
+.sectionfooter {
+  background: #f1f1f1;
+  font-size: 14px;
+
+  a {
+    color: #f17e7e;
+  }
+}
+
+.sectionfooter .footer-heading {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sectionfooter .copyright {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.sectionfooter .list-unstyled li {
+  margin-top: 1rem;
+
+  a {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.sectionfooter .subscribe-form .form-group {
+  position: relative;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.sectionfooter .subscribe-form .form-group input {
+  background: rgba(0, 0, 0, 0.05) !important;
+  border: none !important;
+  outline: none !important;
+  color: rgba(0, 0, 0, 0.3) !important;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+.sectionfooter .ftco-footer-social li a {
+  color: #f17e7e;
+}
+
+.sectionfooter .ftco-footer-social li a:hover {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+/*=================================================================================*/
+
+@media screen and (max-width: 350px) {
+  .container-home {
+    padding: 3.875rem 0 0;
+  }
+
+  .content-home {
+    grid-template-columns: 0.25fr 3fr;
+  }
+
+  .imgMe {
+    width: 40vw;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 785px) {
+  .imgLogo {
+    max-width: 17rem;
+  }
+
+  .container-home {
+    padding: 3.875rem 0 0;
+  }
+
+  .content-home {
+    grid-template-columns: max-content 1fr 1fr;
+  }
+
+  .data-home {
+    grid-column: initial;
+    margin-top: 80px;
+  }
+
+  .img-home {
+    order: 1;
+    justify-self: center;
+  }
+
+  .imgMe {
+    width: 40vw;
+    opacity: 1;
+  }
+
+  .container-aboutMe {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  .data-aboutMe {
+    margin-top: 5%;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .imgLogo {
+    max-width: 17rem;
+  }
+
+  .container-home {
+    padding: 3.875rem 0 0;
+  }
+
+  .imgMe {
+    width: 40vw;
+    opacity: 1;
+  }
+
+  .data-home {
+    margin-top: -100px;
+  }
+}
+
+//css
+.navbar {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: padding 0.3s linear;
+  -webkit-transition: padding 0.3s linear;
+  z-index: 1000;
+}
+
+.navbar > .container {
+  height: auto;
+}
+
+.navbartop-btn:hover .mat-button-focus-overlay {
+  display: none;
+}
+
+.navbar-fixed {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 !important;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  animation: 0.6s slideDown forwards;
+}
+
+.navbar-fixed .container {
+  height: 60px !important;
+}
+
+.navbar-fixed .navbartop-btn {
+  line-height: 60px !important;
+}
+
+.top-navbar a {
+  color: $textColor;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.top-navbar a:hover {
+  color: #000000;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin: 40px 0 0 40px;
+  a {
+    display: inherit;
+  }
+}
+
+.navbar-toggle {
+  display: none !important;
+  position: absolute !important;
+  right: 20px;
+  top: 3rem;
+}
+
+
+@media (max-width: 991px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar > .container {
+    padding: 0;
+  }
+
+  .navbar-toggle {
+    display: block !important;
+  }
+
+  .navbar-opened:host .container {
+    height: auto !important;
+    padding: 0px !important;
+  }
+
+  .top-navbar {
+    display: none !important;
+  }
+
+  .navbar-opened:host {
+    .navbar {
+      background-color: $bodyColor;
+    }
+
+    .top-navbar {
+      display: block !important;
+      width: 100% !important;
+      height: auto;
+      flex: none !important;
+      background: $bodyColor;
+    }
+  }
+
+  .navbar-opened:host .top-navbar a {
+    display: block;
+    width: 100%;
+    line-height: 56px !important;
+    color: $textColor !important;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .navbar-opened:host .top-navbar a:hover {
+    background: rgb(240, 240, 240);
+  }
+}

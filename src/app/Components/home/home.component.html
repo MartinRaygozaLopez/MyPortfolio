@@ -1,0 +1,635 @@
+<header>
+  <nav class="navbar navbar-expand-lg navigation-wrap">
+    <div class="container-fluid">
+        <div class="navbar-logo">
+           <a href="#"><img src="./../../../assets/img/MyLogo.png" alt="MyLogo" class="imgLogo"></a>
+        </div>
+        <button color="accent" class="navbar-toggle" (click)="toggleNavbar()">
+          tesat
+        </button>
+     <div  class="top-navbar text-center">
+        <a href="#" class="navbartop-btn" >Home</a>
+        <a href="#" class="navbartop-btn" >About Me</a>
+        <a href="#" class="navbartop-btn" >Certificates</a>
+        <a href="#" class="navbartop-btn" >Skills</a>
+        <a href="#" class="navbartop-btn" >Portfolio</a>
+     </div>
+
+
+      <!-- <a class="navbar-brand" href="#"><img class="imgLogo" src="./../../../assets/img/MyLogo.png" alt="MyLogo" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Certificates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Skills</a>
+          </li>
+        </ul>
+      </div> -->
+
+    </div>
+  </nav>
+</header>
+
+<section id="sectionHome">
+  <div class="container-home grid">
+    <div class="content-home grid">
+      <div class="firstColumn"></div>
+      <div class="img-home">
+        <img class="imgMe" src="./../../../assets/img/Me.png" alt="Me" />
+      </div>
+      <div class="data-home">
+        <h5 class="name-home">Martin Raygoza</h5>
+        <h2 class="title-home">Ingeniero en sistemas computacionales</h2>
+        <p class="rol-home">Full Stack Development Js.</p>
+
+        <p class="description-home">
+          Diseño, desarrollo y/o aplicó modelos computacionales en la solución
+          de problemas aplicando los principios de las ciencias básicas e
+          ingeniería.
+        </p>
+
+        <a class="btn-home" href="#contact"> Read About Me </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sectionAboutMe" style="margin-top: 6rem">
+  <div class="text-center">
+    <h2 class="title-home">About Me</h2>
+    <p class="rol-home">My introduction</p>
+  </div>
+
+  <div class="container-aboutMe container-fluid grid">
+    <img class="img-aboutMe" src="./../../../assets/img/Me.png" alt="Image About" />
+
+    <div class="data-aboutMe">
+      <p class="description-aboutMe">
+        Soy egresado del instituto tecnológico de Tepic de la carrera de
+        ingeniería en sistema computacionales, además soy técnico en
+        programación. Comencé en el mundo de la programación a mis 15 años (hace
+        {{ yearAgo }} años) desarrollando pequeños puntos de venta. Actualmente
+        estoy especializándome en tecnologías como los es angular para el lado
+        del cliente, así como ASP.Net Core y SQL para el lado del servidor.
+        <br />
+        <br />
+        Me gusta crear interfaces web atractivas, modernas e innovadoras. En
+        cuanto a la parte del servidor me inclino por crear API REST. En general
+        me gustan los retos de lógica, dar solución a problemáticas complejas y
+        tomar proyectos que representen un reto para mí.
+      </p>
+      <div class="btn-CV text-center">
+        <a href="./../../../assets/pdf/CV_Martin_Alejandro_Raygoza_López.pdf" target="_blank" class="btn-CV-Download">
+          Descargar CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sectionCertificates" style="margin-top: 4rem">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center" style="margin-bottom: 3rem">
+          <h2 class="title-home">Certificates and courses</h2>
+        </div>
+
+        <owl-carousel-o [options]="customOptions">
+          <ng-container *ngFor="let certificate of certifications">
+            <ng-template carouselSlide>
+              <div class="container-fluid">
+                <div class="row text-center">
+                  <div class="col-12">
+                    <img class="imgCertificates" src="{{ certificate.imagePath }}"
+                      alt="{{ certificate.certificate }}" />
+                  </div>
+                </div>
+                <div class="row text-center">
+                  <div class="col-12 p-3">
+                    <p>{{ certificate.nameCertificate }}</p>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sectionSkills" style="margin-top: 4rem">
+  <div class="text-center" style="margin-bottom: 3rem">
+    <h2 class="title-home">Skill set</h2>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-0 col-sm-0 col-md-0 col-lg-0 col-xl-1"></div>
+
+      <!--==================================== FrondEnd Skills ====================================-->
+      <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 mt-4 p-2">
+        <div class="list-group">
+          <ng-container class="list-group-item flex-column align-items-start p-3">
+            <div class="d-flex w-100 justify-content-between">
+              <img class="imgTitleSkills" src="./../../../assets/img/frontend.png" alt="frontend" />
+              <div class="containerTitleSkill">
+                <h3 class="mb-1 skillTitle">Frontend developer</h3>
+                <p>Languages And Frameworks</p>
+              </div>
+              <div class="iconDown" (click)="showFrontendList()">
+                <i *ngIf="!listFrontEnd" class="fa fa-angle-down" aria-hidden="true"></i>
+                <i *ngIf="listFrontEnd" class="fa fa-angle-up" aria-hidden="true"></i>
+              </div>
+            </div>
+          </ng-container>
+
+          <div style="margin: 0 2rem" class="text-center" *ngIf="listFrontEnd" @inOutPaneAnimation>
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/html.png" alt="html" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">HTML</h4>
+                  <div class="bar">
+                    <div class="bar-90"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/css.png" alt="frontend" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">CSS</h4>
+                  <div class="bar">
+                    <div class="bar-85"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/js.png" alt="frontend" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">JavaScript</h4>
+                  <div class="bar">
+                    <div class="bar-90"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/sass.png" alt="frontend" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">SCSS / SASS</h4>
+                  <div class="bar">
+                    <div class="bar-85"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/typeScript.png" alt="frontend" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">TypeScript</h4>
+                  <div class="bar">
+                    <div class="bar-90"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/angular.png" alt="frontend" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Angular</h4>
+                  <div class="bar">
+                    <div class="bar-80"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/bootstrap.png" alt="frontend" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Bootstrap</h4>
+                  <div class="bar">
+                    <div class="bar-80"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-0 col-sm-0 col-md-2 col-lg-2 col-xl-2"></div>
+
+      <!--==================================== Backend Skills ====================================-->
+      <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 mt-4 p-2">
+        <div class="list-group">
+          <ng-container class="list-group-item flex-column align-items-start p-3">
+            <div class="d-flex w-100 justify-content-between">
+              <img class="imgTitleSkills" src="./../../../assets/img/backend.png" alt="frontend" />
+              <div class="containerTitleSkill">
+                <h3 class="mb-1 skillTitle">Backend developer</h3>
+                <p>Languages And Frameworks</p>
+              </div>
+              <div class="iconDown" (click)="showBackendList()">
+                <i *ngIf="!listBackend" class="fa fa-angle-down" aria-hidden="true"></i>
+                <i *ngIf="listBackend" class="fa fa-angle-up" aria-hidden="true"></i>
+              </div>
+            </div>
+          </ng-container>
+
+          <div style="margin: 0 2rem" class="text-center" *ngIf="listBackend" @inOutPaneAnimation>
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/csharp.png" alt="frontend" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">C#</h4>
+                  <div class="bar">
+                    <div class="bar-85"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/net.png" alt="frontend" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">ASP.NET MVC</h4>
+                  <div class="bar">
+                    <div class="bar-90"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/net.png" alt="frontend" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">ASP.NET CORE REST</h4>
+                  <div class="bar">
+                    <div class="bar-90"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/sql.png" alt="frontend" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">SQL Server</h4>
+                  <div class="bar">
+                    <div class="bar-95"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/php.png" alt="frontend" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">PHP</h4>
+                  <div class="bar">
+                    <div class="bar-60"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/laravel.png" alt="frontend" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Laravel</h4>
+                  <div class="bar">
+                    <div class="bar-60"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-0 col-sm-0 col-md-0 col-lg-0 col-xl-1"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-0 col-sm-0 col-md-0 col-lg-0 col-xl-1"></div>
+
+      <!--==================================== Software Skills ====================================-->
+      <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 mt-4 p-2">
+        <div class="list-group">
+          <ng-container class="list-group-item flex-column align-items-start p-3">
+            <div class="d-flex w-100 justify-content-between">
+              <img class="imgTitleSkills" src="./../../../assets/img/software.png" alt="frontend" />
+              <div class="containerTitleSkill">
+                <h3 class="mb-1 skillTitle">Software</h3>
+                <p>Development Environments</p>
+              </div>
+              <div class="iconDown" (click)="showSoftwareList()">
+                <i *ngIf="!listSoftware" class="fa fa-angle-down" aria-hidden="true"></i>
+                <i *ngIf="listSoftware" class="fa fa-angle-up" aria-hidden="true"></i>
+              </div>
+            </div>
+          </ng-container>
+
+          <div style="margin: 0 2rem" class="text-center" *ngIf="listSoftware" @inOutPaneAnimation>
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/visualStudio.png" alt="visualStudio" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Visual Studio</h4>
+                  <div class="bar">
+                    <div class="bar-95"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/visualStudioCode.png" alt="visualStudioCode" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Visual Studio Code</h4>
+                  <div class="bar">
+                    <div class="bar-95"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/androidStudio.png" alt="androidStudio" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Android Studio</h4>
+                  <div class="bar">
+                    <div class="bar-80"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/netBeans.png" alt="netBeans" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">NetBeans</h4>
+                  <div class="bar">
+                    <div class="bar-95"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/ssis.png" alt="ssis" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">
+                    SQL Server Integration Services
+                  </h4>
+                  <div class="bar">
+                    <div class="bar-95"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/gitLogo.png" alt="gitLogo" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">GIT</h4>
+                  <div class="bar">
+                    <div class="bar-90"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/gitHub.png" alt="gitHub" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">GitHub</h4>
+                  <div class="bar">
+                    <div class="bar-90"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/azureDevOps.png" alt="azureDevOps" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Azure DevOps</h4>
+                  <div class="bar">
+                    <div class="bar-95"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/photoshop.png" alt="Photoshop" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Photoshop</h4>
+                  <div class="bar">
+                    <div class="bar-80"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/illustrator.png" alt="illustrator" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Illustrator</h4>
+                  <div class="bar">
+                    <div class="bar-80"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-0 col-sm-0 col-md-2 col-lg-2 col-xl-2"></div>
+
+      <!--==================================== Others Skills ====================================-->
+      <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 mt-4 p-2">
+        <div class="list-group">
+          <ng-container class="list-group-item flex-column align-items-start p-3">
+            <div class="d-flex w-100 justify-content-between">
+              <img class="imgTitleSkills" src="./../../../assets/img/skills.png" alt="skills" />
+              <div class="text-center">
+                <h3 class="mb-1 skillTitle">Others</h3>
+                <p class="text-center">Skills</p>
+              </div>
+              <div class="iconDown" (click)="showOthersList()">
+                <i *ngIf="!listOthers" class="fa fa-angle-down" aria-hidden="true"></i>
+                <i *ngIf="listOthers" class="fa fa-angle-up" aria-hidden="true"></i>
+              </div>
+            </div>
+          </ng-container>
+
+          <div style="margin: 0 2rem" class="text-center" *ngIf="listOthers" @inOutPaneAnimation>
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/eu.png" alt="Eu" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Inglés</h4>
+                  <small>B2 (Oxford Exam)</small>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/autodidacta.png" alt="Autodidacta" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Autodidacta</h4>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/teamWork.png" alt="TeamWork" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">
+                    Capacidad de trabajar en equipo
+                  </h4>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/iniciativa.png" alt="Iniciativa" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Iniciativa</h4>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/AnalisisDatos.png" alt="AnalisisDeDatos" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Capacidad de análisis</h4>
+                </div>
+              </div>
+            </ng-container>
+
+            <ng-container class="list-group-item flex-column align-items-start p-3">
+              <div class="mt-5 d-flex w-100">
+                <img class="imgTitleSkills" src="./../../../assets/img/resolucionConflicto.png"
+                  alt="resolucionDeConflicto" />
+                <div class="containerListSkill">
+                  <h4 class="mb-1 skillTitle">Resolución de conflictos</h4>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-0 col-sm-0 col-md-0 col-lg-0 col-xl-1"></div>
+    </div>
+  </div>
+</section>
+
+<section id="sectionProjects" style="margin-top: 4rem">
+  <div class="text-center" style="margin-bottom: 3rem">
+    <h2 class="title-home">Portafolio</h2>
+    <p class="rol-home">Trabajos recientes</p>
+  </div>
+</section>
+
+<footer class="sectionfooter">
+  <div class="container" style="margin: 0 auto !important">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row text-center">
+          <div class="col-md-12 col-lg-11 mb-md-0 mb-4">
+            <p class="rol-home">Ingeniero en sistemas computacionales</p>
+            <h2 class="footer-heading">Martin Alejandro Raygoza López</h2>
+            
+            <ul class="ftco-footer-social p-0">
+              <li>
+                <a target="_blank" href="https://www.youtube.com/channel/UC9s2MV-DVJ3NW9ak6GBtRlw"><span class=""><i
+                      class="fa fa-youtube-play" aria-hidden="true"></i></span></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><span class=""><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/MartinRaygozaLopez"><span class=""><i class="fa fa-github" aria-hidden="true"></i></span></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/in/martin-alejandro-raygoza-lopez-6744911b3/"><span class=""><i class="fa fa-linkedin" aria-hidden="true"></i></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12 mb-md-0 mb-4 text-center">
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-1">Home</a></li>
+              <li><a href="#" class="py-1">About me</a></li>
+              <li><a href="#" class="py-1">Certificates</a></li>
+              <li><a href="#" class="py-1">Skills</a></li>
+              <li><a href="#" class="py-1">Portfolio</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 pt-4 border-top">
+      <div class="col-md-12 col-lg-12 text-center">
+        <p class="copyright">
+          Copyright &copy;{{ currentYear }} Todos los derechos reservados. | Martin Alejandro Raygoza López
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
