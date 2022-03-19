@@ -1,6 +1,7 @@
 import { Component, HostBinding, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { animate, style, transition, trigger } from '@angular/animations';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -63,7 +64,15 @@ export class HomeComponent implements OnInit {
   yearAgo: number;
   @HostBinding('class.navbar-opened') navbarOpened = false;
 
-  constructor() { }
+  private idiomas: Array<string>;
+  lenguage: string = "";
+
+  constructor(public translate: TranslateService) {
+    this.idiomas = ['es', 'en'];
+    translate.addLangs(this.idiomas);
+    translate.setDefaultLang('es');
+    this.lenguage = "es";
+  }
 
   ngOnInit(): void {
     this.currentYear = new Date().getFullYear();
@@ -166,6 +175,11 @@ export class HomeComponent implements OnInit {
 
   toggleNavbar(): void {
     this.navbarOpened = !this.navbarOpened;
+  }
+
+  changeLanguage(lenguage: string): void {
+    this.lenguage = lenguage;
+    this.translate.setDefaultLang(lenguage);
   }
 
 }

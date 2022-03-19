@@ -25,23 +25,6 @@ $colorBtnCV: #708296;
   padding: 0;
 }
 
-:active,
-:hover,
-:focus {
-  outline: 0 !important;
-  outline-offset: 0;
-}
-
-a,
-a:hover {
-  font-family: "Geomanist", sans-serif;
-  text-decoration: none;
-}
-
-.imgLogo {
-  max-width: 14rem;
-}
-
 /*================== Custom CSS Design ==================*/
 
 h1,
@@ -88,6 +71,170 @@ p {
   line-height: 1.5rem;
   letter-spacing: 1px;
   font-family: "Geomanist", sans-serif;
+}
+
+.text-or {
+  font-size: 1.2rem;
+  color: $blackColor;
+  font-weight: bold;
+  line-height: 1.5rem;
+  font-family: "Geomanist", sans-serif;
+  margin: 0 10px;
+
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  font-family: "Geomanist", sans-serif;
+  text-decoration: none;
+}
+
+.imgLogo {
+  max-width: 14rem;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: padding 0.3s linear;
+  -webkit-transition: padding 0.3s linear;
+  z-index: 1000;
+}
+
+.right-navbar {
+  margin-right: 40px !important;
+}
+
+.navbar > .container {
+  height: auto;
+}
+
+.navbartop-btn:hover .mat-button-focus-overlay {
+  display: none;
+}
+
+.navbar-fixed {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 !important;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  animation: 0.6s slideDown forwards;
+}
+
+.navbar-fixed .container {
+  height: 60px !important;
+}
+
+.navbar-fixed .navbartop-btn {
+  line-height: 60px !important;
+}
+
+.top-navbar a {
+  color: $textColor;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.top-navbar a:hover {
+  color: #000000;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin: 40px 0 0 40px;
+  a {
+    display: inherit;
+  }
+}
+
+.navbar-toggle {
+  display: none !important;
+  position: absolute !important;
+  right: 20px;
+  top: 3rem;
+}
+
+@media (max-width: 991px) {
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar > .container {
+    padding: 0;
+  }
+
+  .navbar-toggle {
+    display: block !important;
+  }
+
+  .navbar-opened:host .container {
+    height: auto !important;
+    padding: 0px !important;
+  }
+
+  .top-navbar {
+    display: none !important;
+  }
+
+  .navbar-opened:host {
+    .navbar {
+      background-color: $bodyColor;
+    }
+
+    .top-navbar {
+      display: block !important;
+      width: 100% !important;
+      height: auto;
+      flex: none !important;
+      background: $bodyColor;
+    }
+  }
+
+  .navbar-opened:host .top-navbar a {
+    display: block;
+    width: 100%;
+    line-height: 56px !important;
+    color: $textColor !important;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .navbar-opened:host .top-navbar a:hover {
+    background: rgb(240, 240, 240);
+  }
+
+  .btnToggle {
+    background: none;
+    border: 0;
+    font-size: 20px;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+  }
+}
+
+.btn-flags {
+  cursor: pointer;
+  img {
+    width: 1.65rem;
+    cursor: pointer;
+    margin-right: 5px;
+  }
 }
 
 /*======================= Sections =======================*/
@@ -383,6 +530,63 @@ p {
   }
 }
 
+//================ Portfolio ================//
+
+.portafolio-item {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.75);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portafolio-img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.portafolio-text {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.portafolio-text p {
+  text-align: justify;
+}
+
+.portafolio-item:hover .portafolio-text {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.portafolio-item:hover .portafolio-img {
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+@media (max-width: 767px) { 
+  .portafolio-item {
+    margin-top: 2rem;
+  }
+}
+
 //================ Footer ================//
 
 .ftco-footer-social li {
@@ -545,121 +749,9 @@ footer {
   .data-home {
     margin-top: -100px;
   }
-}
 
-//css
-.navbar {
-  position: absolute;
-  width: 100%;
-  background: transparent;
-  color: #fff;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: padding 0.3s linear;
-  -webkit-transition: padding 0.3s linear;
-  z-index: 1000;
-}
-
-.navbar > .container {
-  height: auto;
-}
-
-.navbartop-btn:hover .mat-button-focus-overlay {
-  display: none;
-}
-
-.navbar-fixed {
-  position: fixed !important;
-  left: 0;
-  right: 0;
-  top: 0;
-  padding: 0 !important;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-  animation: 0.6s slideDown forwards;
-}
-
-.navbar-fixed .container {
-  height: 60px !important;
-}
-
-.navbar-fixed .navbartop-btn {
-  line-height: 60px !important;
-}
-
-.top-navbar a {
-  color: $textColor;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-.top-navbar a:hover {
-  color: #000000;
-}
-
-.navbar-logo {
-  display: flex;
-  align-items: center;
-  margin: 40px 0 0 40px;
-  a {
-    display: inherit;
+  .portafolio-item {
+    margin-top: 0;
   }
 }
 
-.navbar-toggle {
-  display: none !important;
-  position: absolute !important;
-  right: 20px;
-  top: 3rem;
-}
-
-
-@media (max-width: 991px) {
-  .navbar {
-    padding: 0;
-  }
-
-  .navbar > .container {
-    padding: 0;
-  }
-
-  .navbar-toggle {
-    display: block !important;
-  }
-
-  .navbar-opened:host .container {
-    height: auto !important;
-    padding: 0px !important;
-  }
-
-  .top-navbar {
-    display: none !important;
-  }
-
-  .navbar-opened:host {
-    .navbar {
-      background-color: $bodyColor;
-    }
-
-    .top-navbar {
-      display: block !important;
-      width: 100% !important;
-      height: auto;
-      flex: none !important;
-      background: $bodyColor;
-    }
-  }
-
-  .navbar-opened:host .top-navbar a {
-    display: block;
-    width: 100%;
-    line-height: 56px !important;
-    color: $textColor !important;
-    font-weight: bold;
-    margin: 0;
-  }
-
-  .navbar-opened:host .top-navbar a:hover {
-    background: rgb(240, 240, 240);
-  }
-}
