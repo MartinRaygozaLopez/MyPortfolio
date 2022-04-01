@@ -8,7 +8,7 @@
     "SystemEngineer": "Computer systems engineer",
     "CareerDescription": "Design, development and/or applied computational models in solving problems applying the principles of basic sciences and engineering.",
     "ReadAboutMe": "Read about me",
-    "ViewProjects": "View Projects",
+    "ViewProjects": "View projects",
     "MyIntroduction": "My introduction",
     "DownloadCV": "Download CV",
     "Certificates": "Certificates",
@@ -18,6 +18,14 @@
     "OthersSkills": "Others skills",
     "SoftSkills": "Soft skills",
     "MostRecentWorks": "Most recent works",
-    "AllRightReserved": "All right reserved."
+    "AllRightReserved": "All right reserved.",
+    "English": "English",
+    "Autodidact": "Autodidact",
+    "Teamwork": "Teamwork",
+    "Initiative": "Initiative",
+    "AnalysisCapacity": "Analysis capacity",
+    "ConflictResolution": "Conflict resolution",
+    "Or": "or",
+    "MoreInformation": "More information"
 }
 

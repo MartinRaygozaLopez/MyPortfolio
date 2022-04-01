@@ -1,4 +1,4 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
+import { Component, HostBinding, HostListener, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { TranslateService } from '@ngx-translate/core';
@@ -62,21 +62,25 @@ export class HomeComponent implements OnInit {
   listOthers = false;
   currentYear: number;
   yearAgo: number;
+  modal: boolean;
+  backToTopButton: boolean;
   @HostBinding('class.navbar-opened') navbarOpened = false;
 
   private idiomas: Array<string>;
-  lenguage: string = "";
+  lenguage: string;
 
   constructor(public translate: TranslateService) {
     this.idiomas = ['es', 'en'];
     translate.addLangs(this.idiomas);
     translate.setDefaultLang('es');
-    this.lenguage = "es";
+    this.lenguage = 'es';
   }
 
   ngOnInit(): void {
     this.currentYear = new Date().getFullYear();
     this.yearAgo = this.currentYear - 2014;
+    this.modal = false;
+    this.backToTopButton = false;
 
     this.certifications = [
       {
@@ -145,6 +149,11 @@ export class HomeComponent implements OnInit {
         nameCertificate: 'Diseño de prototipos digitales con Marvel, ProtoIO y Figma'
       },
       {
+        imagePath: './../../../assets/img/UdemyLogo.png',
+        certificate: 'Udemy',
+        nameCertificate: 'Web Server IIS Mastery Course'
+      },
+      {
         imagePath: './../../../assets/img/PMCLogo.png',
         certificate: 'Punto México Conecta',
         nameCertificate: 'Robótica Básica'
@@ -155,6 +164,15 @@ export class HomeComponent implements OnInit {
         nameCertificate: 'Robótica Intermedia'
       }
     ];
+  }
+
+  @HostListener('window:scroll', ['$event']) // for window scroll events
+  onScroll(event): void {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      this.backToTopButton = true;
+    } else {
+      this.backToTopButton = false;
+    }
   }
 
   showFrontendList(): void {
@@ -180,6 +198,41 @@ export class HomeComponent implements OnInit {
   changeLanguage(lenguage: string): void {
     this.lenguage = lenguage;
     this.translate.setDefaultLang(lenguage);
+  }
+
+  backtoTop(): void {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  hideModal(): void {
+    this.modal = false;
+  }
+
+  showPopUpByWebPage(webPage: string): void {
+    this.modal = true;
+
+    switch (webPage) {
+      case 'DIME':
+        
+        break;
+    
+      default:
+        this.modal = false;
+        break;
+    }
+  }
+
+  goToRepositoryByWebPage(webPage: string): void {
+    switch (webPage) {
+      case 'DIME':
+        
+        break;
+    
+      default:
+        this.modal = false;
+        break;
+    }
   }
 
 }
