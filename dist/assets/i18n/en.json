@@ -1,0 +1,40 @@
+
+{
+    "Home": "Home",
+    "AboutMe": "About me",
+    "Courses": "Courses",
+    "Skills": "Skills",
+    "Portfolio": "Portfolio",
+    "SystemEngineer": "Computer systems engineer",
+    "CareerDescription": "Design, development and/or applied computational models in solving problems applying the principles of basic sciences and engineering.",
+    "ReadAboutMe": "Read about me",
+    "ViewProjects": "View projects",
+    "MyIntroduction": "My introduction",
+    "DownloadCV": "Download CV",
+    "Certificates": "Certificates",
+    "MyTechnicalLevel": "My technical level",
+    "LanguagesAndFrameworks": "Languages and Frameworks",
+    "DevelopmentEnvironments": "Development Environments",
+    "OthersSkills": "Others skills",
+    "SoftSkills": "Soft skills",
+    "MostRecentWorks": "Most recent works",
+    "AllRightReserved": "All right reserved.",
+    "English": "English",
+    "Autodidact": "Autodidact",
+    "Teamwork": "Teamwork",
+    "Initiative": "Initiative",
+    "AnalysisCapacity": "Analysis capacity",
+    "ConflictResolution": "Conflict resolution",
+    "Or": "or",
+    "MoreInformation": "More information",
+    "technologiesUsed": "Technologies Used",
+
+
+    "DIMEDescriptionText": "This website was developed for the non-profit organization DIME which is a comprehensive center for people with Type 1 Diabetes Mellitus, providing care to improve the quality of diabetes patients and their families.",
+    "COVIDDescriptionText": "This website shows general information about COVID 19, this web page was developed as a school project to publicize real data about the pandemic, a section for blogs was also developed using Laravel.",
+    "UniversityDescriptionText": "Description University",
+    "RFIDDescriptionText": "Description RFID",
+    "eQuotingDescriptionText": "Description eQuoting",
+    "portfolioDescriptionText": "Description portfolio"
+}
+

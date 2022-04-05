@@ -1,0 +1,40 @@
+
+{
+    "Home": "Página principal",
+    "AboutMe": "Sobre mí",
+    "Courses": "Cursos",
+    "Skills": "Habilidades",
+    "Portfolio": "Portafolio",
+    "SystemEngineer": "Ingeniero en sistemas computacionales",
+    "CareerDescription": "Diseño, desarrollo y/o aplicó modelos computacionales en la solución de problemas aplicando los principios de las ciencias básicas e ingeniería.",
+    "ReadAboutMe": "Leer sobre mí",
+    "ViewProjects": "Ver projectos",
+    "MyIntroduction": "Mi introducción",
+    "DownloadCV": "Descargar CV",
+    "Certificates": "Certificados",
+    "MyTechnicalLevel": "Mi nivel técnico",
+    "LanguagesAndFrameworks": "Lenguajes y Frameworks",
+    "DevelopmentEnvironments": "Entornos de desarrollo",
+    "OthersSkills": "Otras habilidades",
+    "SoftSkills": "Habilidades blandas",
+    "MostRecentWorks": "Trabajos más recientes",
+    "AllRightReserved": "Todos los derechos reservados.",
+    "English": "Inglés",
+    "Autodidact": "Autodidacta",
+    "Teamwork": "Capacidad de trabajar en equipo",
+    "Initiative": "Iniciativa",
+    "AnalysisCapacity": "Capacidad de análasis",
+    "ConflictResolution": "Resolución de conflictos",
+    "Or": "o",
+    "MoreInformation": "Más información",
+    "technologiesUsed": "Tecnologías usadas",
+
+    
+    "DIMEDescriptionText": "Sitio web fue desarrollado para la organización sin fines de lucro DIME el cual es un centro integral para personas con Diabetes Mellitus tipo 1, brinda atención para mejorar la calidad de los pacientes con diabetes y sus familias.",
+    "COVIDDescriptionText": "Este sitio web muestra información general sobre el COVID 19, esta página web fue desarrollada como proyecto escolar para dar a conocer datos reales sobre la pandemia, también se desarrollo una sección para blogs utilizando Laravel. ",
+    "UniversityDescriptionText": "Descripcion University",
+    "RFIDDescriptionText": "Descripcion RFID",
+    "eQuotingDescriptionText": "Descripcion eQuoting",
+    "portfolioDescriptionText": "Descripcion portfolio"
+}
+
