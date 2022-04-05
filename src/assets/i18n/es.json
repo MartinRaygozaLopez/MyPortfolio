@@ -26,6 +26,15 @@
     "AnalysisCapacity": "Capacidad de análasis",
     "ConflictResolution": "Resolución de conflictos",
     "Or": "o",
-    "MoreInformation": "Más información"
+    "MoreInformation": "Más información",
+    "technologiesUsed": "Tecnologías usadas",
+
+    
+    "DIMEDescriptionText": "Sitio web fue desarrollado para la organización sin fines de lucro DIME el cual es un centro integral para personas con Diabetes Mellitus tipo 1, brinda atención para mejorar la calidad de los pacientes con diabetes y sus familias.",
+    "COVIDDescriptionText": "Este sitio web muestra información general sobre el COVID 19, esta página web fue desarrollada como proyecto escolar para dar a conocer datos reales sobre la pandemia, también se desarrollo una sección para blogs utilizando Laravel. ",
+    "UniversityDescriptionText": "Descripcion University",
+    "RFIDDescriptionText": "Descripcion RFID",
+    "eQuotingDescriptionText": "Descripcion eQuoting",
+    "portfolioDescriptionText": "Descripcion portfolio"
 }
 
