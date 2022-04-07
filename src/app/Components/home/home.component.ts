@@ -98,95 +98,95 @@ export class HomeComponent implements OnInit {
 
     this.certifications = [
       {
-        imagePath: './../../../assets/img/CiscoCCNALogo.png',
+        imagePath: 'assets/img/CiscoCCNALogo.png',
         certificate: 'Cisco',
         nameCertificate: 'CCNA Routing and Switching: Introduccción a redes',
       },
       {
-        imagePath: './../../../assets/img/CiscoCCNALogo.png',
+        imagePath: 'assets/img/CiscoCCNALogo.png',
         certificate: 'Cisco',
         nameCertificate:
           'CCNA Routing and Switching: Principios básicos de routing y switching',
       },
       {
-        imagePath: './../../../assets/img/CiscoCCNALogo.png',
+        imagePath: 'assets/img/CiscoCCNALogo.png',
         certificate: 'Cisco',
         nameCertificate: 'CCNA Routing and Switching: Escalamiento de redes',
       },
       {
-        imagePath: './../../../assets/img/UdemyLogo.png',
+        imagePath: 'assets/img/UdemyLogo.png',
         certificate: 'Udemy',
         nameCertificate: 'Azure DevOps Fundamentals for Beginners',
       },
       {
-        imagePath: './../../../assets/img/UdemyLogo.png',
+        imagePath: 'assets/img/UdemyLogo.png',
         certificate: 'Udemy',
         nameCertificate: 'C# Advanced Topics Prepare for Technical Interviews',
       },
       {
-        imagePath: './../../../assets/img/UdemyLogo.png',
+        imagePath: 'assets/img/UdemyLogo.png',
         certificate: 'Udemy',
         nameCertificate:
           'Data Warehouse Developer-SQL Server ETL SSIS SSAS SSRS T-SQL',
       },
       {
-        imagePath: './../../../assets/img/UdemyLogo.png',
+        imagePath: 'assets/img/UdemyLogo.png',
         certificate: 'Udemy',
         nameCertificate:
           'Git+GitHub Todo un Sistema de Control de Versiones de Cero',
       },
       {
-        imagePath: './../../../assets/img/UdemyLogo.png',
+        imagePath: 'assets/img/UdemyLogo.png',
         certificate: 'Udemy',
         nameCertificate:
           'JavaScript Moderno Guía Definitiva Construye +15 Proyectos',
       },
       {
-        imagePath: './../../../assets/img/UdemyLogo.png',
+        imagePath: 'assets/img/UdemyLogo.png',
         certificate: 'Udemy',
         nameCertificate: 'The Complete ASP.NET MVC 5 Course',
       },
       {
-        imagePath: './../../../assets/img/UdemyLogo.png',
+        imagePath: 'assets/img/UdemyLogo.png',
         certificate: 'Udemy',
         nameCertificate:
           'Using SQL, create analytical functions, grouping sets, ranking functions, spatial aggregates',
       },
       {
-        imagePath: './../../../assets/img/UdemyLogo.png',
+        imagePath: 'assets/img/UdemyLogo.png',
         certificate: 'Udemy',
         nameCertificate:
           'Web Design for Beginners Real World Coding int HTML & CSS',
       },
       {
-        imagePath: './../../../assets/img/UdemyLogo.png',
+        imagePath: 'assets/img/UdemyLogo.png',
         certificate: 'Udemy',
         nameCertificate:
           'Mastering SQL Server 2016 Integration Services (SSIS)-Part 1',
       },
       {
-        imagePath: './../../../assets/img/UdemyLogo.png',
+        imagePath: 'assets/img/UdemyLogo.png',
         certificate: 'Udemy',
         nameCertificate:
           'Diseño de prototipos digitales con Marvel, ProtoIO y Figma',
       },
       {
-        imagePath: './../../../assets/img/UdemyLogo.png',
+        imagePath: 'assets/img/UdemyLogo.png',
         certificate: 'Udemy',
         nameCertificate: 'Web Server IIS Mastery Course',
       },
       {
-        imagePath: './../../../assets/img/Plurasight.png',
+        imagePath: 'assets/img/Plurasight.png',
         certificate: 'Plurasight',
         nameCertificate: 'Csharp Clean Coding Principles',
       },
       {
-        imagePath: './../../../assets/img/PMCLogo.png',
+        imagePath: 'assets/img/PMCLogo.png',
         certificate: 'Punto México Conecta',
         nameCertificate: 'Robótica Básica',
       },
       {
-        imagePath: './../../../assets/img/PMCLogo.png',
+        imagePath: 'assets/img/PMCLogo.png',
         certificate: 'Punto México Conecta',
         nameCertificate: 'Robótica Intermedia',
       },
@@ -244,28 +244,28 @@ export class HomeComponent implements OnInit {
     switch (webPage) {
       case 'DIME':
         this.portfolio = {
-          imgPath: './../../../assets/img/pwDIME.png',
+          imgPath: 'assets/img/pwDIME.png',
           descriptionText: 'DIMEDescriptionText',
           technologyUsed: [
             {
               technologyName: 'HTML',
-              imgPath: './../../../assets/img/html.png',
+              imgPath: 'assets/img/html.png',
             },
             {
               technologyName: 'CSS3',
-              imgPath: './../../../assets/img/css.png',
+              imgPath: 'assets/img/css.png',
             },
             {
               technologyName: 'JS',
-              imgPath: './../../../assets/img/js.png',
+              imgPath: 'assets/img/js.png',
             },
             {
               technologyName: 'Bootstrap',
-              imgPath: './../../../assets/img/bootstrap.png',
+              imgPath: 'assets/img/bootstrap.png',
             },
             {
               technologyName: 'PHP',
-              imgPath: './../../../assets/img/php.png',
+              imgPath: 'assets/img/php.png',
             },
           ],
           demo: {
@@ -277,32 +277,36 @@ export class HomeComponent implements OnInit {
 
       case 'COVID':
         this.portfolio = {
-          imgPath: './../../../assets/img/pwCovid.png',
+          imgPath: 'assets/img/pwCovid.png',
           descriptionText: 'COVIDDescriptionText',
           technologyUsed: [
             {
               technologyName: 'HTML',
-              imgPath: './../../../assets/img/html.png',
+              imgPath: 'assets/img/html.png',
             },
             {
               technologyName: 'CSS3',
-              imgPath: './../../../assets/img/css.png',
+              imgPath: 'assets/img/css.png',
             },
             {
               technologyName: 'JS',
-              imgPath: './../../../assets/img/js.png',
+              imgPath: 'assets/img/js.png',
             },
             {
               technologyName: 'Bootstrap',
-              imgPath: './../../../assets/img/bootstrap.png',
+              imgPath: 'assets/img/bootstrap.png',
+            },
+            {
+              technologyName: 'Angular',
+              imgPath: 'assets/img/angular.png',
             },
             {
               technologyName: 'PHP',
-              imgPath: './../../../assets/img/php.png',
+              imgPath: 'assets/img/php.png',
             },
             {
               technologyName: 'Laravel',
-              imgPath: './../../../assets/img/laravel.png',
+              imgPath: 'assets/img/laravel.png',
             },
           ],
           demo: {
@@ -314,24 +318,24 @@ export class HomeComponent implements OnInit {
 
       case 'University':
         this.portfolio = {
-          imgPath: './../../../assets/img/pwUniversidad.png',
+          imgPath: 'assets/img/pwUniversidad.png',
           descriptionText: 'UniversityDescriptionText',
           technologyUsed: [
             {
               technologyName: 'HTML',
-              imgPath: './../../../assets/img/html.png',
+              imgPath: 'assets/img/html.png',
             },
             {
               technologyName: 'CSS3',
-              imgPath: './../../../assets/img/css.png',
+              imgPath: 'assets/img/css.png',
             },
             {
               technologyName: 'JS',
-              imgPath: './../../../assets/img/js.png',
+              imgPath: 'assets/img/js.png',
             },
             {
               technologyName: 'Bootstrap',
-              imgPath: './../../../assets/img/bootstrap.png',
+              imgPath: 'assets/img/bootstrap.png',
             },
           ],
           demo: {
@@ -343,36 +347,36 @@ export class HomeComponent implements OnInit {
 
       case 'RFID':
         this.portfolio = {
-          imgPath: './../../../assets/img/pwRFID.png',
+          imgPath: 'assets/img/pwRFID.png',
           descriptionText: 'RFIDDescriptionText',
           technologyUsed: [
             {
               technologyName: 'HTML',
-              imgPath: './../../../assets/img/html.png',
+              imgPath: 'assets/img/html.png',
             },
             {
               technologyName: 'CSS3',
-              imgPath: './../../../assets/img/css.png',
+              imgPath: 'assets/img/css.png',
             },
             {
               technologyName: 'JS',
-              imgPath: './../../../assets/img/js.png',
+              imgPath: 'assets/img/js.png',
             },
             {
               technologyName: 'Bootstrap',
-              imgPath: './../../../assets/img/bootstrap.png',
+              imgPath: 'assets/img/bootstrap.png',
             },
             {
               technologyName: 'jQuery',
-              imgPath: './../../../assets/img/jQuery.png',
+              imgPath: 'assets/img/jQuery.png',
             },
             {
               technologyName: 'MVC',
-              imgPath: './../../../assets/img/net.png',
+              imgPath: 'assets/img/net.png',
             },
             {
               technologyName: 'SQL',
-              imgPath: './../../../assets/img/sql.png',
+              imgPath: 'assets/img/sql.png',
             }
           ],
           demo: {
@@ -384,36 +388,36 @@ export class HomeComponent implements OnInit {
 
       case 'eQuoting':
         this.portfolio = {
-          imgPath: './../../../assets/img/pweQuoting.png',
+          imgPath: 'assets/img/pweQuoting.png',
           descriptionText: 'eQuotingDescriptionText',
           technologyUsed: [
             {
               technologyName: 'HTML',
-              imgPath: './../../../assets/img/html.png',
+              imgPath: 'assets/img/html.png',
             },
             {
               technologyName: 'CSS3',
-              imgPath: './../../../assets/img/css.png',
+              imgPath: 'assets/img/css.png',
             },
             {
               technologyName: 'TypeScript',
-              imgPath: './../../../assets/img/typeScript.png',
+              imgPath: 'assets/img/typeScript.png',
             },
             {
               technologyName: 'Bootstrap',
-              imgPath: './../../../assets/img/bootstrap.png',
+              imgPath: 'assets/img/bootstrap.png',
             },
             {
               technologyName: 'Angular',
-              imgPath: './../../../assets/img/angular.png',
+              imgPath: 'assets/img/angular.png',
             },
             {
               technologyName: 'MVC',
-              imgPath: './../../../assets/img/net.png',
+              imgPath: 'assets/img/net.png',
             },
             {
               technologyName: 'SQL',
-              imgPath: './../../../assets/img/sql.png',
+              imgPath: 'assets/img/sql.png',
             }
           ],
           demo: {
@@ -425,28 +429,28 @@ export class HomeComponent implements OnInit {
 
       case 'Portafolio':
         this.portfolio = {
-          imgPath: './../../../assets/img/pweQuoting.png',
+          imgPath: 'assets/img/pwPortfolio.png',
           descriptionText: 'portfolioDescriptionText',
           technologyUsed: [
             {
               technologyName: 'HTML',
-              imgPath: './../../../assets/img/html.png',
+              imgPath: 'assets/img/html.png',
             },
             {
               technologyName: 'CSS3',
-              imgPath: './../../../assets/img/css.png',
+              imgPath: 'assets/img/css.png',
             },
             {
               technologyName: 'TypeScript',
-              imgPath: './../../../assets/img/typeScript.png',
+              imgPath: 'assets/img/typeScript.png',
             },
             {
               technologyName: 'Bootstrap',
-              imgPath: './../../../assets/img/bootstrap.png',
+              imgPath: 'assets/img/bootstrap.png',
             },
             {
               technologyName: 'Angular',
-              imgPath: './../../../assets/img/angular.png',
+              imgPath: 'assets/img/angular.png',
             }
           ],
           demo: {
