@@ -3,15 +3,13 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=martinraygozalopez&label=Profile%20views&color=0e75b6&style=flat" alt="martinraygozalopez" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=martinraygozalopez" alt="martinraygozalopez" /></a> </p>
-
 - 👨‍💻 All of my projects are available at [https://martinraygozalopez.github.io/MyPortfolio/](https://martinraygozalopez.github.io/MyPortfolio/)
 
 - 📫 How to reach me **cfmarl1998@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/martin alejandro raygoza lopez" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="martin alejandro raygoza lopez" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/martinraygozalopez" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="martinraygozalopez" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
@@ -19,6 +17,4 @@
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=martinraygozalopez&show_icons=true&locale=en&layout=compact" alt="martinraygozalopez" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=martinraygozalopez&show_icons=true&locale=en" alt="martinraygozalopez" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=martinraygozalopez&" alt="martinraygozalopez" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=martinraygozalopez&show_icons=true&theme=dark&locale=en" alt="martinraygozalopez" /></p>
