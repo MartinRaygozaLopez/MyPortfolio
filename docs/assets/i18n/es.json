@@ -1,0 +1,42 @@
+
+{
+    "Home": "Página principal",
+    "AboutMe": "Sobre mí",
+    "Courses": "Cursos",
+    "Skills": "Habilidades",
+    "Portfolio": "Portafolio",
+    "SystemEngineer": "Ingeniero en sistemas computacionales",
+    "CareerDescription": "Diseño, desarrollo y/o aplico modelos computacionales en la solución de problemas aplicando los principios de las ciencias básicas e ingeniería.",
+    "ReadAboutMe": "Leer sobre mí",
+    "AboutMePart1": "Soy egresado del instituto tecnológico de Tepic de la carrera de ingeniería en sistema computacionales, además soy técnico en programación. Comencé en el mundo de la programación a mis 15 años desarrollando pequeños puntos de venta. Actualmente estoy especializándome en tecnologías como lo es angular para el lado del cliente, así como ASP.Net Core, SQL y IIS para el lado del servidor.",
+    "AboutMePart2": "Me gusta crear interfaces web atractivas, modernas e innovadoras utilizando diseño UX/IX. En cuanto a la parte del servidor me inclino por crear API REST. En general me gustan los retos de lógica, dar solución a problemáticas complejas y tomar proyectos que representen un reto para mí.",
+    "ViewProjects": "Ver projectos",
+    "MyIntroduction": "Mi introducción",
+    "DownloadCV": "Descargar CV",
+    "Certificates": "Certificados",
+    "MyTechnicalLevel": "Mi nivel técnico",
+    "LanguagesAndFrameworks": "Lenguajes y Frameworks",
+    "DevelopmentEnvironments": "Entornos de desarrollo",
+    "OthersSkills": "Otras habilidades",
+    "SoftSkills": "Habilidades blandas",
+    "MostRecentWorks": "Trabajos más recientes",
+    "AllRightReserved": "Todos los derechos reservados.",
+    "English": "Inglés",
+    "Autodidact": "Autodidacta",
+    "Teamwork": "Capacidad de trabajar en equipo",
+    "Initiative": "Iniciativa",
+    "AnalysisCapacity": "Capacidad de análasis",
+    "ConflictResolution": "Resolución de conflictos",
+    "Or": "o",
+    "MoreInformation": "Más información",
+    "technologiesUsed": "Tecnologías usadas",
+
+    
+    "DIMEDescriptionText": "Sitio web fue desarrollado para la organización sin fines de lucro DIME el cual es un centro integral para personas con Diabetes Mellitus tipo 1, brinda atención para mejorar la calidad de los pacientes con diabetes y sus familias.",
+    "COVIDDescriptionText": "Este sitio web muestra información general sobre el COVID 19, esta página web fue desarrollada como proyecto escolar para dar a conocer datos reales sobre la pandemia, también se desarrolló una sección para blogs utilizando Laravel. ",
+    "UniversityDescriptionText": "Sitio web para la compra de cursos, dicho proyecto fue realizado dentro del curso ‘JavaScript Moderno Guía Definitiva Construye +15 Proyectos’ dentro de la plataforma de Udemy.",
+    "RFIDDescriptionText": "Sistema web de almacenamiento y recuperación de datos remotos utilizando tecnología RFID la cual nos permite ver la ubicación del personal en tiempo real.",
+    "eQuotingDescriptionText": "Sistema web para cotizaciones de ingeniería industrial utilizando metodología MOST y estudios de capacidad. Se realizo un API la cual fue consumida desde Angular.",
+    "portfolioDescriptionText": "Portafolio web donde podemos encontrar una breve descripción sobre mí, algunos cursos que he tomado, las diferentes tecnologías que manejo y por último los proyectos que he relazado."
+}
+

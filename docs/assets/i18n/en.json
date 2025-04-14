@@ -1,0 +1,42 @@
+
+{
+    "Home": "Home",
+    "AboutMe": "About me",
+    "Courses": "Courses",
+    "Skills": "Skills",
+    "Portfolio": "Portfolio",
+    "SystemEngineer": "Computer systems engineer",
+    "CareerDescription": "I design, development and/or apply computational models in solving problems applying the principles of basic sciences and engineering.",
+    "ReadAboutMe": "Read about me",
+    "AboutMePart1": "I am a graduate of the Technological Institute of Tepic with a career in computer system engineering, and I am also a programming technician. I started in the world of programming when I was 15 years old, developing small points of sale. I am currently specializing in technologies such as Angular for the client side, as well as ASP.Net Core, SQL and IIS for the server side.",
+    "AboutMePart2": "I like to create attractive, modern and innovative web interfaces using UX/IX design. As for the server part, I am inclined to create REST APIs. In general, I like logic challenges, solving complex problems and taking on projects that represent a challenge for me.",
+    "ViewProjects": "View projects",
+    "MyIntroduction": "My introduction",
+    "DownloadCV": "Download CV",
+    "Certificates": "Certificates",
+    "MyTechnicalLevel": "My technical level",
+    "LanguagesAndFrameworks": "Languages and Frameworks",
+    "DevelopmentEnvironments": "Development Environments",
+    "OthersSkills": "Others skills",
+    "SoftSkills": "Soft skills",
+    "MostRecentWorks": "Most recent works",
+    "AllRightReserved": "All right reserved.",
+    "English": "English",
+    "Autodidact": "Autodidact",
+    "Teamwork": "Teamwork",
+    "Initiative": "Initiative",
+    "AnalysisCapacity": "Analysis capacity",
+    "ConflictResolution": "Conflict resolution",
+    "Or": "or",
+    "MoreInformation": "More information",
+    "technologiesUsed": "Technologies used",
+
+
+    "DIMEDescriptionText": "This website was developed for the non-profit organization DIME which is a comprehensive center for people with Type 1 Diabetes Mellitus, providing care to improve the quality of diabetes patients and their families.",
+    "COVIDDescriptionText": "This website shows general information about COVID 19, this web page was developed as a school project to publicize real data about the pandemic, a section for blogs was also developed using Laravel.",
+    "UniversityDescriptionText": "Website for the purchase of courses, said project was carried out within the course 'Modern JavaScript Definitive Guide Builds +15 Projects' within the Udemy platform.",
+    "RFIDDescriptionText": "Remote data storage and retrieval web system using RFID technology which allows us to see the location of personnel in real time.",
+    "eQuotingDescriptionText": "Web system for industrial engineering quotes using MOST methodology and capacity studies. An API was made which was consumed from Angular.",
+    "portfolioDescriptionText": "Web portfolio where we can find a brief description about me, some courses I have taken, the different technologies I use and finally the projects I have relaunched."
+}
+
