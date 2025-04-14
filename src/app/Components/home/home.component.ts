@@ -1,9 +1,10 @@
 import { Component, HostBinding, HostListener, OnInit } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { TranslateService } from '@ngx-translate/core';
 import { PortfolioViewModel } from 'src/app/models/portfolioViewModel';
+import { register } from 'swiper/element/bundle';
 
+register();
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -37,36 +38,6 @@ import { PortfolioViewModel } from 'src/app/models/portfolioViewModel';
   ],
 })
 export class HomeComponent implements OnInit {
-  customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: true,
-    dots: false,
-    navSpeed: 100,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    navText: [
-      '<i class="fa fa-caret-left"></i>',
-      '<i class="fa fa-caret-right"></i>',
-    ],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 2,
-      },
-      740: {
-        items: 3,
-      },
-      940: {
-        items: 5,
-      },
-    },
-    nav: true,
-  };
   certifications: any[] = [];
   portfolio: PortfolioViewModel;
 

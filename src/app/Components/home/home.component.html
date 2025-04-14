@@ -121,29 +121,27 @@
           <h2 class="title-home">{{ "Courses" | translate }}</h2>
           <p class="rol-home">{{ "Certificates" | translate }}</p>
         </div>
-
-        <owl-carousel-o [options]="customOptions">
-          <ng-container *ngFor="let certificate of certifications">
-            <ng-template carouselSlide>
-              <div class="container-fluid">
-                <div class="row text-center">
-                  <div class="col-12">
-                    <img
-                      class="imgCertificates"
-                      src="{{ certificate.imagePath }}"
-                      alt="{{ certificate.certificate }}"
-                    />
-                  </div>
-                </div>
-                <div class="row text-center">
-                  <div class="col-12 p-3">
-                    <p>{{ certificate.nameCertificate }}</p>
-                  </div>
+        <swiper-container class="mySwiper" pagination="true" navigation="true" loop="true" pagination-clickable="true" space-between="30" slides-per-view="5">
+          <swiper-slide *ngFor="let certificate of certifications">
+            <div class="container-fluid">
+              <div class="row text-center">
+                <div class="col-12">
+                  <img
+                    class="imgCertificates"
+                    src="{{ certificate.imagePath }}"
+                    alt="{{ certificate.certificate }}"
+                  />
                 </div>
               </div>
-            </ng-template>
-          </ng-container>
-        </owl-carousel-o>
+              <div class="row text-center">
+                <div class="col-12 p-3">
+                  <p>{{ certificate.nameCertificate }}</p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+
       </div>
     </div>
   </div>
@@ -161,7 +159,7 @@
 
       <!--==================================== FrondEnd Skills ====================================-->
       <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 mt-4 p-2">
-        <div class="list-group">
+        <div class="list-group" style="overflow: hidden;">
           <ng-container
             class="list-group-item flex-column align-items-start p-3"
           >
@@ -207,9 +205,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">HTML</h4>
-                  <div class="bar">
-                    <div class="bar-90"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -225,9 +220,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">CSS</h4>
-                  <div class="bar">
-                    <div class="bar-90"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -243,9 +235,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">JavaScript</h4>
-                  <div class="bar">
-                    <div class="bar-90"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -261,9 +250,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">JQuery</h4>
-                  <div class="bar">
-                    <div class="bar-90"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -279,9 +265,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">SCSS / SASS</h4>
-                  <div class="bar">
-                    <div class="bar-85"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -297,9 +280,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">TypeScript</h4>
-                  <div class="bar">
-                    <div class="bar-90"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -315,9 +295,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">Angular</h4>
-                  <div class="bar">
-                    <div class="bar-80"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -333,9 +310,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">Bootstrap</h4>
-                  <div class="bar">
-                    <div class="bar-80"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -347,7 +321,7 @@
 
       <!--==================================== Backend Skills ====================================-->
       <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 mt-4 p-2">
-        <div class="list-group">
+        <div class="list-group" style="overflow: hidden;">
           <ng-container
             class="list-group-item flex-column align-items-start p-3"
           >
@@ -393,9 +367,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">C#</h4>
-                  <div class="bar">
-                    <div class="bar-85"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -411,9 +382,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">.NET Framework</h4>
-                  <div class="bar">
-                    <div class="bar-90"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -429,9 +397,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">.NET CORE</h4>
-                  <div class="bar">
-                    <div class="bar-90"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -447,9 +412,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">SQL Server</h4>
-                  <div class="bar">
-                    <div class="bar-95"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -465,9 +427,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">PHP</h4>
-                  <div class="bar">
-                    <div class="bar-60"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -483,9 +442,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">Laravel</h4>
-                  <div class="bar">
-                    <div class="bar-60"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -501,7 +457,7 @@
 
       <!--==================================== Software Skills ====================================-->
       <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 mt-4 p-2">
-        <div class="list-group">
+        <div class="list-group" style="overflow: hidden;">
           <ng-container
             class="list-group-item flex-column align-items-start p-3"
           >
@@ -547,9 +503,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">Visual Studio</h4>
-                  <div class="bar">
-                    <div class="bar-95"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -565,9 +518,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">Visual Studio Code</h4>
-                  <div class="bar">
-                    <div class="bar-95"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -583,9 +533,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">Android Studio</h4>
-                  <div class="bar">
-                    <div class="bar-80"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -601,9 +548,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">NetBeans</h4>
-                  <div class="bar">
-                    <div class="bar-95"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -621,9 +565,6 @@
                   <h4 class="mb-1 skillTitle">
                     SQL Server Integration Services
                   </h4>
-                  <div class="bar">
-                    <div class="bar-95"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -639,9 +580,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">GIT</h4>
-                  <div class="bar">
-                    <div class="bar-90"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -657,9 +595,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">GitHub</h4>
-                  <div class="bar">
-                    <div class="bar-90"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -675,9 +610,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">Azure DevOps</h4>
-                  <div class="bar">
-                    <div class="bar-95"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -693,9 +625,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">Photoshop</h4>
-                  <div class="bar">
-                    <div class="bar-80"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -711,9 +640,6 @@
                 />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">Illustrator</h4>
-                  <div class="bar">
-                    <div class="bar-80"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -725,9 +651,6 @@
                 <img class="imgTitleSkills" src="assets/img/xd.png" alt="XD" />
                 <div class="containerListSkill">
                   <h4 class="mb-1 skillTitle">Adobe XD</h4>
-                  <div class="bar">
-                    <div class="bar-80"></div>
-                  </div>
                 </div>
               </div>
             </ng-container>
@@ -739,7 +662,7 @@
 
       <!--==================================== Others Skills ====================================-->
       <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 mt-4 p-2">
-        <div class="list-group">
+        <div class="list-group" style="overflow: hidden;">
           <ng-container
             class="list-group-item flex-column align-items-start p-3"
           >
